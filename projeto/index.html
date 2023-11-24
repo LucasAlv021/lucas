@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Whisky</title>
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+      <!-- add essa class -->
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" src="img/logojust.png" alt="Just Whisky "> Just Whisky
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historia/historia.html">Historia do Whisky</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="processo/processo.html">Processo de fabricaçao</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="whisky/whisky.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Whisky
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="whisky/eua.html">EUA</a></li>
+                  <li><a class="dropdown-item" href="whisky/irlanda.html">Irlandês</a></li>
+                  <li><a class="dropdown-item" href="whisky/escocia.html">Escocês</a></li>
+                
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="just/just.html">Sobre o Just Whisky</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <!-- slider -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/teste1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Conheça a historia do Whisky.</h2>
+              <p>Clicando a baixo descubra toda historia do Whisky e suas particularidades.</p>
+              <a href="historia/historia.html" class="main-btn">Historia</a>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/teste2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Conheça como é fabricado.</h2>
+              <p>Clicando a baixo descubra como é o processo de fabricaçao.</p>
+              <a href="processo/processo.html" class="main-btn">fabricaçao</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/teste3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Conheça a variedades de whisky</h2>
+              <p>Clicando a baixo descubra os paises e o tipos de whisky que existem.</p>
+              <a href="whisky/whisky.html" class="main-btn">Whisky</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>    
+      <!-- Sobre a empresa -->
+      <div id="about-area">
+        <div class="container">
+            <div class="row">
+              <div class="col-12"> 
+                <h3 class="main-title">Sobre a Just Whisky</h3>
+              </div>
+              <div class="col-md-6">
+                <img class="img-fluid" src="img/logojust1.png" alt="Agência hDC">
+              </div>
+              <div class="col-md-6">
+                <h3 class="about-title">Uma whiskeria que sabe de historia.</h3>
+                <p>Somos estudantes do Csi, degustadores de whisky.</p>
+                <p>A just Whisky vai te ajudar a entender melhor a diferença dos whiskeis.</p>
+                <p>Aqui voce entenderá desde o processo de fabricaçao a os paises onde sao produzidos.</p>
+                <p>Veja outros diferenciais:</p>
+                <ul id="about-list">
+                  <li><i class="fas fa-check"></i> Toda a historia</li>
+                  <li><i class="fas fa-check"></i> Processo de fabricaçao</li>
+                  <li><i class="fas fa-check"></i> Whisky americano</li>
+                  <li><i class="fas fa-check"></i> Whisky Escoces</li>
+                  <li><i class="fas fa-check"></i> Whisky Irlandes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- Serviços da empresa -->
+      <div id="services-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+                <h3 class="main-title">Nossas especialidades</h3>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-check-square"></i>
+              <h4>Whisky original?</h4>
+              <p>Sabemos identificar a originalidade.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-check-square"></i>
+              <h4>Conheça a historia</h4>
+              <p>Tenha uma visão do que é o whisky e sua historia.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-check-square"></i>
+              <h4>O que acompanhar com whisky?</h4>
+              <p>Quer beber um whisky especifico e nao sabe com o que acompanhar.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-check-square"></i>
+              <h4>Nacionalidades</h4>
+              <p>Aqui voce saberá qual a nacionalidade do seu Whisky.</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-check-square"></i>
+              <h4>Ajuda na hora da compra?</h4>
+              <p>Ajudamos você a selecionar o melhor whisky</p>
+            </div>
+            <div class="col-md-4 service-box">
+              <i class="fas fa-check-square"></i>
+              <h4>Experiência em Whisky</h4>
+              <p>Sabemos qual ano e qual o melhor acompanhamento para seu whisky.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Dados da empresa -->
+      <div id="data-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleA"></div>
+              <p>Consumo de whisky no Brasil</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleB"></div>
+              <p>Consumo de whisky no EUA</p>
+            </div>
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleC"></div>
+              <p>Consumo de whisky no Asia</p>
+            </div>  
+            <div class="col-md-3 col-xs-6 circle-box">
+              <div id="circleD"></div>
+              <p>Consumo de whisky na Europa</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Time -->
+      <div id="team-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <h3 class="main-title">Nosso time</h3>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/logojust.png" class="card-img-top" alt="Imagem de Perfil 1">
+                <div class="card-body">
+                  <h5 class="card-title">logo1</h5>
+                  <p class="card-text">logo1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/logojust.png" class="card-img-top" alt="Imagem de Perfil 2">
+                <div class="card-body">
+                  <h5 class="card-title">logo1 </h5>
+                  <p class="card-text">logo1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/logojust.png" class="card-img-top" alt="Imagem de Perfil 3">
+                <div class="card-body">
+                  <h5 class="card-title">logo1</h5>
+                  <p class="card-text">logo1</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="card">
+                <img src="img/logojust.png" class="card-img-top" alt="Imagem de Perfil 4">
+                <div class="card-body">
+                  <h5 class="card-title">logo1</h5>
+                  <p class="card-text">logo1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Trabalhe conosco -->
+      <div id="apply-area">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 apply-box" id="company-img"></div>
+            <div class="col-md-6 apply-box" id="pattern-img">
+              <h4>Gostou da nossa pagina?</h4>
+              <p>Clique no botão abaixo e saiba mais sobre os desenvolvedores e a historia por tras da Just Whisky.</p>
+              <a href="just/just.html" class="main-btn" id="apply-btn">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Portfólio -->
+      <div id="portfolio-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Conheça alguns whiskeis existentes:</h3>
+            </div>
+            <div class="col-md-12" id="filter-btn-box">
+              <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+              <button class="main-btn filter-btn" id="dev-btn">EUA</button>
+              <button class="main-btn filter-btn" id="dsg-btn">Irlandes</button>
+              <button class="main-btn filter-btn" id="seo-btn">Escoces</button>
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="img/eua2.png" class="img-fluid" alt="Whisky EUA">
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="img/irlandes1.png" class="img-fluid" alt="Whisky Irlandês">
+            </div>
+            <div class="col-md-4 project-box seo">
+              <img src="img/escoces2.png" class="img-fluid" alt="Whisky Escocês">
+            </div>
+            <div class="col-md-4 project-box dev">
+              <img src="img/eua1.png" class="img-fluid" alt="Whisky EUA">
+            </div>
+            <div class="col-md-4 project-box dsg">
+              <img src="img/irlandes2.png" class="img-fluid" alt="Whisky Irlandês">
+            </div>
+            <div class="col-md-4 project-box seo">
+              <img src="img/escoces1.png" class="img-fluid" alt="Whisky Escocês">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Newsletter -->
+      <div id="news-area">
+        <div class="container">
+          <div class="col-md-12">
+            <h3 class="main-title">Fique por dentro das novidades</h3>
+          </div>
+          <p>Assine nossa lista de e-mails, e receba nossos conteúdos sobre o mundo dos whiskeis</p>
+          <form action="">
+            <input type="text" class="form-control" id="email-input" name="email" placeholder="Seu melhor e-mail">
+            <input type="submit" id="news-btn" value="Inscrever">
+          </form>
+        </div>
+      </div>
+      <!-- Call to Action -->
+      <div id="call-area">
+        <div class="container">
+            <div class="row">
+              <p>Deseja entrar em contato conosco?</p>
+              <button class="main-btn" id="call-btn">Fale conosco</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </main>
+  <!-- Rodapé -->
+  <footer>
+    <div id="contact-area">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="main-title">Entre em contato conosco</h3>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-phone"></i>
+              <p><span class="contact-tile">Ligue para:</span> (21)99999-9999</p>
+              <p><span class="contact-tile">Horários:</span> 10:00 - 19:00</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-envelope"></i>
+              <p><span class="contact-tile">Envie um email:</span> contatojust@justwhisky.com.br</p>
+            </div>
+            <div class="col-md-4 contact-box">
+              <i class="fas fa-map-marker-alt"></i>
+              <p><span class="contact-tile">Venha tomar um whisky:</span> Rua Lorem Ipsum - 1314</p>
+            </div>
+            <div class="col-md-6" id="msg-box">
+              <p>Ou nos deixe uma mensagem:</p>
+            </div>
+            <div class="col-md-6" id="contact-form">
+              <form action="">
+                <input type="text" class="form-control" placeholder="E-mail" name="email">
+                <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                <input type="submit" class="main-btn">
+              </form>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="copy-area">
+      <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <p>Desenvolvido por <a href="https://www.santoinacio-rio.com.br/#gsc.tab=0" target="_blank">Lucas Alves e Cauã Rodrigues</a> &copy; 2023</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+</body>
+</html>
