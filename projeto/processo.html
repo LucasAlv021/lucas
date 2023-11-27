@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Whisky</title>
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <!-- Progress Bar -->
+    <script src="js/progressbar.min.js"></script>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container" id="nav-container">
+          <!-- add essa class -->
+          <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <a class="navbar-brand" href="index.html">
+              <img id="logo" src="img/logojust.png" alt="Just Whisky "> Just Whisky
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+              <div class="navbar-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="historia.html">Historia do Whisky</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="processo.html">Processo de fabricaçao</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="whisky.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Whisky
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="eua.html">EUA</a></li>
+                      <li><a class="dropdown-item" href="irlanda.html">Irlandês</a></li>
+                      <li><a class="dropdown-item" href="escocia.html">Escocês</a></li>
+                    
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="just.html">Sobre o Just Whisky</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+        <!-- slider -->
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+           <div class="carousel-item active" data-bs-interval="10000">
+             <img src="img/teste1.png" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h2>Conheça a historia do Whisky.</h2>
+               <p>Clicando a baixo descubra toda historia do Whisky e suas particularidades.</p>
+               <a href="historia.html" class="main-btn">Historia</a>
+             </div>
+           </div>
+           <div class="carousel-item" data-bs-interval="2000">
+             <img src="img/teste2.png" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h2>Conheça como é fabricado.</h2>
+               <p>Clicando a baixo descubra como é o processo de fabricaçao.</p>
+               <a href="processo.html" class="main-btn">fabricaçao</a>
+             </div>
+           </div>
+           <div class="carousel-item">
+             <img src="img/teste3.png" class="d-block w-100" alt="...">
+             <div class="carousel-caption d-none d-md-block">
+               <h2>Conheça a variedades de whisky</h2>
+               <p>Clicando a baixo descubra os paises e o tipos de whisky que existem.</p>
+               <a href="whisky.html" class="main-btn">Whisky</a>
+             </div>
+           </div>
+         </div>
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+       </div>    
+     <!-- Sobre a empresa -->
+     <div id="about-area">
+       <div class="container">
+           <div class="row">
+             <div class="col-12"> 
+               <h3 class="main-title">Entendenda o processo de destilação </h3>
+             </div>
+             <div class="col-md-6">
+               <img class="img-fluid" src="img/logojust1.png" alt="Agência hDC">
+             </div>
+             <div class="col-md-6">
+               <h3 class="about-title">Uma whiskeria que sabe de historia.</h3>
+               <p>Veja o que voce ira ver nessa pagina:</p>
+               <ul id="about-list">
+                 <li><i class="fas fa-check"></i> Maltagem;</li>
+                 <li><i class="fas fa-check"></i> Maceração (Moagem) e Cozimento;</li>
+                 <li><i class="fas fa-check"></i> Fermentação;</li>
+                 <li><i class="fas fa-check"></i> Destilação;</li>
+                 <li><i class="fas fa-check"></i> Fracionamento;</li>
+                 <li><i class="fas fa-check"></i> Maturação;</li>
+                 <li><i class="fas fa-check"></i> Homogeneização, Filtragem e Engarrafamento;</li>
+                 <li><i class="fas fa-check"></i> Blending;</li>
+                 <li><i class="fas fa-check"></i> Engarrafamento.</li>
+               </ul>
+               <p>Observação: As duas últimas etapas correspondem apenas à produção do Blended Scotch Whisky. A produção dos Single Malts se encerra na sétima fase.</p>
+             </div>
+           </div>
+           <div class="col-12" style="padding: 5%;"> 
+             <p>A destilação, é um método de separação utilizado para separar um líquido que está dissolvido em outro (mistura homogênea formada por líquidos miscíveis). A separação é possível porque os líquidos apresentam pontos de ebulição diferentes.</p> 
+      
+             <p>Bom, vamos a ela:</p>
+           </div>
+           <div class="accordion" id="accordionExample">
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Maltagem
+                 </button>
+               </h2>
+               <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                 <div class="accordion-body">
+                   <p>O processo de fabricação do uísque começa com o cereal (cevada no caso do uísque escocês Single Malt). O amido que está no cereal precisa ser transformado em açúcar solúvel para que o álcool seja produzido. Esta transformação ocorre durante a germinação do grão, através do processo de hidratação do grão - procedimento chamado de "Molting" na língua inglesa.</p>
+
+                   <p>Portanto, "Maltagem" é o nome do processo de hidratação responsável pela disponibilização do açúcar contido na cevada. No processo de maltagem, as enzimas contidas no grão são ativadas e maximizam o teor de amido, que logo mais será convertido em açúcar e, depois, em álcool. Este processo pode levar algo como uma semana para ser finalizado, e é interrompido com a secagem do grão. Durante a maltagem, basicamente, três etapas precisam acontecer:</p>
+                   
+                   <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Infusão: Nesta etapa, os grãos de cevada (que quando secos tem 12% de sua massa de água) ficam submersos em água durante dois dias inteiros para ativar as enzimas que liberam as reservas de amido contidas na cevada. Ao final da infusão, 46% da massa do grão é água.</li>
+                    <li class="list-group-item">Germinação: Nesta fase, os grãos de cevada são espalhados no chão das salas de maltagem para que ocorra a germinação (aumento do tamanho do grão da cevada). Com a germinação, as moléculas de amido se quebram, resultando numa substância chamada de "Dextrina" (amido solúvel), que logo se transforma na maltose (açúcar solúvel).</li>
+                    <li class="list-group-item">Secagem: Neste momento, os grãos são expostos à fumaça de Turfa ou à grandes ventiladores até que estejam completamente secos, pois a secagem do grão interrompe o processo de germinação. Ao fim da secagem, a cevada já é considerada "Malte" e somente 4% de sua massa é água.</li>
+                  </ol>
+                  
+                  <p>Observação: A cevada é o único grão capaz de transformar o amido em açúcar através da germinação. Se o uísque é feito a partir de outros grãos, esses grãos devem ser cozidos em grandes panelas de pressão para que suas enzimas sejam liberadas, possibilitando a quebra dos amidos e disponibilização dos açúcares que levam ao surgimento do álcool.</p>
+                 </div>
+               </div>
+             </div>
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Maceração (Moagem) e Cozimento
+                 </button>
+               </h2>
+               <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                 <div class="accordion-body">
+                   <p>O malte é moído para produzir uma farinha áspera chamada "Grist". Esta farinha é misturada com água quente em um contêiner chamado "Mash Tun" para extrair açúcares solúveis. Este líquido repleto de açúcares é conhecido como "Mosto" (ou 'Wort' em inglês). Uma vez obtido o mosto, são necessárias algumas "Levas" de cozimento conforme exemplificado abaixo:</p>
+
+                   <p>(Primeira Leva) Na primeira leva, a água deve permanecer aquecida à 64ºC e atua por 30 minutos com a farinha.
+                   </p>
+                   <p>(Segunda Leva) Após os 30 minutos da primeira leva, a água é retirada e mistura-se o que sobrou do mosto com água mais uma vez, agora numa temperatura entre 70ºC e 85ºC por mais 30 minutos.</p>
+
+                   <p>(Terceira Leva) Removida novamente a água, os mostos resultantes das duas primeiras etapas são, por fim, colocados juntos em um mesmo recipiente. Na terceira fase adiciona-se água com temperatura entre 80 e 95 graus. Aqui, são necessários 15 minutos para a ativação das enzimas do amido do malte. Essas enzimas tem a função de disponibilizar os açúcares contidos no Mosto.</p>
+                 </div>
+               </div>
+             </div>
+             <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Fermentação
+                 </button>
+               </h2>
+               <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                 <div class="accordion-body">
+                   <p>A fermentação começa com a adição da levedura, produzindo uma espécie de cerveja. Nesse momento, o Mosto (Wort) é levado à grandes recipientes de madeira chamados "Washbacks", onde são adicionadas as Leveduras (microorganismos que agem como fermento e dão início ao processo de fermentação). A levedura se alimenta dos açúcares do mosto e produz (excreta) álcool e dióxido de carbono. </p>
+
+                   <p>As leveduras podem agir por um período de 48 a 120 horas, dependendo da preferência da destilaria. Ao final do processo, é obtido um líquido bastante similar à cerveja sem o lúpulo, o que faz com que muitos digam que o uísque nada mais é do que uma cerveja destilada.</p>
+                   
+                   <p>Durante a fermentação o mosto recebe a levedura e é aquecido no Washback. As leveduras transformam os açúcares em álcool e fermentações curtas resultam em nuances de cereais e malte, enquanto fermentações longas resultam em destilados mais florais e frutados.</p>
+                 </div>
+               </div>
+             </div>
+             <div class="text-center" style="padding: 5%;">
+              <img src="img/processo1.jpg" class="rounded" alt="banner de whisky">
+             </div>
+             <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Homogeneização, Filtragem e Engarrafamento
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Mesmo que os barris tenham o mesmo tamanho e permaneçam armazenados durante o mesmo período de tempo, a posição e a forma como o barril é armazenado impõem diferentes graus de influência da madeira ao destilado. Por isso, antes do engarrafamento, os uísques de diferentes barris são misturados. Assim, obtém-se um uísque homogêneo/padronizado (proveniente de um lote composto por vários barris diferentes).</p>
+
+                    <p>É muito frequente o uso do corante de caramelo (E150) para igualar a coloração dos uísques produzidos em diferentes lotes. Isso é muito comum pois, do contrário, a cada ano veríamos o uísque com uma cor diferente na prateleira do supermercado (e isso poderia abrir margem para dúvidas quanto à qualidade da bebida, dada a variação de cor a cada lote produzido).</p>
+
+                    <p>Por fim, o uísque é filtrado a frio para remover partículas de moléculas que permanecem em suspensão no líquido. Grande parte dos entusiastas considera a filtragem um processo indesejado, pois pode resultar numa entrega menor de aromas e sabores.</p>
+
+                    <p>Após a homogeneização e a filtragem, a bebida é, finalmente, engarrafada e está pronta para ser comercializada. Mas atenção, ao fim deste processo o uísque ainda é um ‘Single Malt’. Para a bebida se tornar o Blended Scotch Whisky que vemos na prateleira do supermercado, cabem ainda duas etapas - leia abaixo.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Blending
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>O tipo de uísque mais vendido no mundo é o ‘Blended Scotch Whisky’ - uma mistura de uísques de malte (destilados em Alambique de Cobre) e uísques de grão (destilados em Destiladores Contínuos). Cerca de 40 ou mais ‘Single Malts’ e ‘Single Grains’ são misturados em uma única bebida, que passa a ser chamada de Blended Scotch Whisky. Um profissional chamado 'Master Blender' é o responsável por casar os sabores e aromas de diversos Single Malts e Single Grains de forma a se equilibrem e se unirem em harmonia. As misturas são feitas sob medida para gostos e mercados específicos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Engarrafamento
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>O engarrafamento costuma ser feito por máquinas - absoluta maior parte dos casos. Existem, contudo, empresas que processam o engarrafamento e a rotulagem à mão. Nesta fase os uísques são diluídos com água para atingirem um volume alcóolico desejado (geralmente 40% ABV) e, somente depois, são engarrafados.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center" style="padding: 5%;">
+                <img src="img/processo2.jpg" class="rounded" alt="banner de whisky">
+               </div>
+           </div>
+           <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Destilação
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>O processo de destilação é responsável por separar a água do álcool através dos seus diferentes pontos de ebulição. Na primeira fase da destilação (primeira batelada), os destiladores são enchidos até metade da sua capacidade total e, normalmente, é utilizado um processo de aquecimento indireto a vapor, para obter um melhor controle da temperatura. O destilado obtido ao fim do processo volta novamente ao destilador para uma segunda destilação (segunda batelada).</p>
+
+                  <p>Antes de iniciar a segunda destilação, o resultado do primeiro processo pode ser misturado com o líquido não aproveitado durante ele. Então, essa mistura é levada à segunda etapa do processo de destilação, que resulta em um líquido com um teor alcoólico de aproximadamente 70%.</p>
+
+                  <p>Durante o processo, os vapores do álcool sobem pelas paredes do destilador, e são separados em três etapas diferentes, conhecidas como 'Escoamento Inicial', 'Escoamento Médio' e, por fim, 'Escoamento Final' (ou "Cabeça", "Coração" e "Cauda"). Via de regra, somente o coração é mantido, mas algumas destilarias reutilizam a Cauda na segunda batelada. Cabe ao profissional chamado ‘Master Distiller’ decidir quais porcentagens do escoamento inicial e do escoamento final serão descartadas. A decisão de corte do destilado  irá determinar o caráter do uísque, definindo se ele será mais ou menos frutado, mais ou menos pesado, etc.</p>
+
+                  <p>No caso de uísques classificados como "Blended Scotch Whisky" e dos uísques Irlandeses, podem ser usados também um alambiques de coluna para a destilação contínua ("Coffey Stills") para a destilação em porções. O propósito é o mesmo: extrair o ‘Spirit’ (destilado ou álcool) da ‘Wash’ (mosto). O processo é simples e idêntico: a Wash é fervida e, como o álcool entra em ebulição numa temperatura mais baixa do que a água, é separado da Wash em forma de vapor, que é condensado e se transforma em líquido. Com a destilação através do Coffey Still, o álcool é condensado num condensador ou numa serpentina (que produz um estilo de Spirit mais pesado e oleoso).</p>
+                  <p>Em outras palavras, três fases são necessárias para a etapa da Destilação do mosto:</p>
+
+                  <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">Primeira fase: aproximadamente metade da capacidade total dos destiladores recebem o mosto e água, e a ebulição geralmente se dá através de aquecimento indireto para que seja possível controlar bem a temperatura durante o procedimento - esta fase ocorre num alambique chamado de 'Wash Still'. Esta primeira destilação resulta num líquido chamado de 'Low Wine', com graduação alcóolica aproximada de 25%.</li>
+                    <li class="list-group-item">Segunda fase: o Low Wine pode ou não ser misturado com a "Cauda" resultante da terceira fase do processo de destilação anterior. O líquido obtido com a adição da "Cauda" ao Low Wine é destilado e alcança um teor alcóolico de aproximadamente 70%. Esta fase ocorre num alambique chamado de 'Spirit Still'.</li>
+                    <li class="list-group-item">Terceira fase: após a segunda destilação, o New Make é "Cortado", ou seja, o New Make é separados em três partes novamente: "Cabeça", "Coração" e "Cauda". O "Coração" vai para o barril e vira uísque, a "Cabeça" é descartada e a "Cauda" volta para a segunda fase.</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Fracionamento (Corte)
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>O Fracionamento pode ser visto como uma etapa da Destilação. É a fase na qual o Master Distiller, através de um compartimento de vidro com válvulas e torneiras em seu interior, recolhe o álcool para avaliar o 'Spirit'. O "Corte" consiste na separação da 'Cabeça','Coração' e 'Cauda" do uísque. A ‘Cauda’ pode ou não ser devolvida ao alambique para ser destiladas mais uma vez. A parte desejada e utilizável do processo de destilação é a do meio, o "Coração". Após o corte, o destilado (aqui chamado de ‘New Make’) já pode ser ingerido e exibe algumas características que estarão presentes no uísque ao final da produção. Todavia, nesse estágio, a bebida ainda não poder ser chamada de uísque - pois ainda precisa passar pela fase de maturação em barris de Carvalho.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Maturação
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Finalizada a Destilação e o Corte, o líquido precisa ser diluído até atingir um teor alcoólico ideal para a etapa de Maturação - aproximadamente 63% ABV. Para a maturação, o uísque é levado a barris de madeira (necessariamente Carvalho), onde permanece por alguns anos. Os barris de Carvalho são especialmente tratados para maturar o uísque por pelo menos três anos.</p>
+
+                  <p>Nesta etapa da produção, a bebida absorve nuances e compostos oriundos da madeira, enquanto perde os traços de enxofre (fortes no destilado/'New Make'). Por força da lei escocesa, esta fase leva pelo menos três anos. Importante: o tamanho do barril tem grande influência na maturação do destilado pois, quanto menor o barril, maior o percentual de volume do destilado que estará em contato com a madeira - portanto, quanto menor o barril, mais rápido será o procedimento de maturação. Especialistas estimam que cerca de 70% dos aromas e sabores do uísque advém do contato com a madeira.</p>
+                </div>
+              </div>
+            </div>
+         </div>
+     </div>
+    </div>
+  </main> <!-- Rodapé -->
+  <footer>
+     <div id="contact-area">
+       <div class="container">
+           <div class="row">
+             <div class="col-md-12">
+               <h3 class="main-title">Entre em contato conosco</h3>
+             </div>
+             <div class="col-md-4 contact-box">
+               <i class="fas fa-phone"></i>
+               <p><span class="contact-tile">Ligue para:</span> (21)99999-9999</p>
+               <p><span class="contact-tile">Horários:</span> 10:00 - 19:00</p>
+             </div>
+             <div class="col-md-4 contact-box">
+               <i class="fas fa-envelope"></i>
+               <p><span class="contact-tile">Envie um email:</span> contatojust@justwhisky.com.br</p>
+             </div>
+             <div class="col-md-4 contact-box">
+               <i class="fas fa-map-marker-alt"></i>
+               <p><span class="contact-tile">Venha tomar um whisky:</span> Rua Lorem Ipsum - 1314</p>
+             </div>
+             <div class="col-md-6" id="msg-box">
+               <p>Ou nos deixe uma mensagem:</p>
+             </div>
+             <div class="col-md-6" id="contact-form">
+               <form action="">
+                 <input type="text" class="form-control" placeholder="E-mail" name="email">
+                 <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                 <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                 <input type="submit" class="main-btn">
+               </form>
+             </div>
+           </div>
+       </div>
+     </div>
+     <div id="copy-area">
+       <div class="container">
+         <div class="row">
+             <div class="col-md-12">
+               <p>Desenvolvido por <a href="https://www.santoinacio-rio.com.br/#gsc.tab=0" target="_blank">Lucas Alves e Cauã Rodrigues</a> &copy; 2023</p>
+             </div>
+         </div>
+       </div>
+     </div>
+  </footer>
+   <!-- Scripts do projeto -->
+  <script src="js/scripts.js"></script>
+    
+</body>
+</html>
