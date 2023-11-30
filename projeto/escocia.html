@@ -32,10 +32,11 @@
             <a class="navbar-brand" href="index.html">
               <img id="logo" src="img/logojust.png" alt="Just Whisky "> Just Whisky
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
               <div class="navbar-nav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
@@ -67,6 +68,379 @@
           </nav>
         </div>
       </header>
-    
+      <main>
+        <div class="container-fluid">
+          <!-- slider -->
+          <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-indicators">
+                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                     <div class="carousel-item active" data-bs-interval="10000">
+                       <img src="img/teste1.png" class="d-block w-100" alt="...">
+                       <div class="carousel-caption d-none d-md-block">
+                         <h2>Conheça a historia do Whisky.</h2>
+                         <p>Clicando a baixo descubra toda historia do Whisky e suas particularidades.</p>
+                         <a href="historia.html" class="main-btn">Historia</a>
+                       </div>
+                     </div>
+                     <div class="carousel-item" data-bs-interval="2000">
+                       <img src="img/teste2.png" class="d-block w-100" alt="...">
+                       <div class="carousel-caption d-none d-md-block">
+                         <h2>Conheça como é fabricado.</h2>
+                         <p>Clicando a baixo descubra como é o processo de fabricaçao.</p>
+                         <a href="processo.html" class="main-btn">fabricaçao</a>
+                       </div>
+                     </div>
+                     <div class="carousel-item">
+                       <img src="img/teste3.png" class="d-block w-100" alt="...">
+                       <div class="carousel-caption d-none d-md-block">
+                         <h2>Conheça a variedades de whisky</h2>
+                         <p>Clicando a baixo descubra os paises e o tipos de whisky que existem.</p>
+                         <a href="whisky.html" class="main-btn">Whisky</a>
+                       </div>
+                     </div>
+                   </div>
+                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                   </button>
+                   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                   </button>
+          </div> 
+          <div class="row" style="padding: 5%; background-color: #F9F9F9;">
+            <div class="col-12"> 
+              <h3 class="main-title">Sobre o whisky Escocês </h3>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="img/logojust1.png" alt="Agência hDC">
+            </div>
+            <div class="col-md-6">
+              <h3 class="about-title">Uma whiskeria que sabe de historia.</h3>
+              <p>Veja o que voce ira ver nessa pagina:</p>
+              <ul id="about-list">
+                <li><i class="fas fa-check"></i> A ORIGEM DO WHISKY</li>
+                <li><i class="fas fa-check"></i> Principais linhas</li>
+                <li><i class="fas fa-check"></i> Melhores marcas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample" style="padding: 5%;">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Historia
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>O whisky americano começou com imigrantes da Inglaterra, da Irlanda, da Escócia, do País de Gales, da Alemanha e da Holanda, que levaram consigo não somente o conhecimento das técnicas de produção, como também o gosto pela bebida. A destilação começou na Pensilvânia e em Maryland e depois se espalhou para o sul. Como na Escócia, os primeiros destiladores eram alvos de tributação e para não pagá-los, se mudaram para o vale do rio Ohio. Carregaram consigo seus alambiques e fixaram residência em Kentucky.</p>
+                  <p>O bourbon é uma variedade de whiskey típica dos Estados Unidos. Teve origem nos finais do século XVIII no condado de Bourbon, no Estado de Kentucky, que por sua vez recebeu o nome da casa real francesa na época de sua criação, na década de 1780. Trata-se de um whiskey único que representa o espírito genuíno dos EUA, graças à agressividade e firmeza dos seus aromas e sabores principais.</p>
+                  <p>Sua história não é bem documentada. Existem muitas lendas associadas, umas com mais credibilidade que outras. Por exemplo, a invenção do bourbon é geralmente atribuída ao pastor batista e dono de destilaria Elijah Craig. Diz-se também que foi ele o primeiro a envelhecer o destilado em barris de carvalho, "um processo que dá ao bourbon uma cor avermelhada e um sabor único". Para além dos limites do condado de Kentucky, um dono de destilaria chamado Jacob Spears é creditado como sendo o primeiro a etiquetar seu produto como "bourbon whiskey". Sua casa e seu estabelecimento ainda sobrevivem e estão abertos à visitação.
+                  Provavelmente não há somente um único "inventor" do bourbon, que evoluiu a partir das práticas de destilação de várias pessoas e teve seu desenvolvimento atual concluído apenas no final do século XIX.</p>
+                  <p>A família Samuels foi considerada a família mais antiga produtora de Bourbon. Estima-se que a sua produção começou nos finais do século XVIII (1783) e, desde então, tem-se prolongado até os dias de hoje. Porém, é de realçar que antes de 1840, a produção de Bourbon não foi realizada comercialmente e, durante este período, Robert Samuels que havia criado a receita “secreta” da família realizou algumas alterações e melhorias no paladar do seu Bourbon. Anos mais tarde, TW Samuels (neto de Robert Samuels) construiu uma destilaria para a produção e comercialização da receita de família. A empresa está agora nas mãos de Bill Samuels Jr., que continua com a tradição da produção de Bourbon na família.
+                  A primeira destilaria comercial surgiu em finais do século XVIII, no Estado do Kentucky, nos EUA. Ela surgiu pela ação de Evan Williams e abriu nas margens do rio Ohio, em Louisville. O seu Bourbon ainda carrega o nome do seu destilador e é um dos mais apreciados e populares em todo o mundo.</p>
+                  <p>A família Beam é um dos nomes mais conhecidos no âmbito do whisky americano. A sua produção teve início em 1795 e o homem que começou o negócio de família foi Jacob Beam que vendeu nesse mesmo ano o seu primeiro barril de "Old Jake Beam Sour”. Desde então este tem sido um negócio familiar e tem atravessado várias gerações.</p>
+                  <p>Os primeiros destiladores produziam whisky com milho da região, em vez de usar trigo ou cevada, mais tradicionais. Em 1823 foi desenvolvida uma nova mistura na destilação do Bourbon, a denominada mistura azeda (sour mash). Era um método mais preciso de controle da fermentação. Esta invenção deve-se ao Dr. James C. Crow que, na destilaria Pepper, desenvolveu uma forma de reciclagem de leveduras para uma próxima fermentação, o que revolucionou a forma como a maioria dos Bourbons ou whiskies do Tennessee eram produzidos. Além disso, persuadiu outros produtores a maturar o whisky para melhorar o sabor.
+                  Apesar de ter sido destilado durante décadas na área do velho condado de Bourbon, apenas no ano de 1840 é que o Bourbon foi oficializado como Bourbon. Antes disso, era frequentemente chamado de “whisky do condado Bourbon” ou “whisky do velho condado de Bourbon”. Entretanto, é um erro comum dizer que o Bourbon só pode ser feito no Kentucky. Ele pode ser produzido em qualquer lugar dos EUA onde a produção de bebidas alcoólicas seja legal. Na prática, porém, cerca de 95% do Bourbon é destilado e maturado nesse estado.
+                  A Guerra Civil Americana ocorreu entre 1861 e 1865 e isso conduziu a uma escassez de whisky em todo o país. Representou o fim de muitas destilarias. Estas destilarias perderam a sua mão-de-obra, uma vez que os seus homens foram forçados a combater na guerra e muitas batalhas foram travadas nas regiões onde se encontravam. O fim da guerra foi um período de renovação e crescimento e algumas fábricas se tornaram grandes companhias.</p>
+                  <p>No final do século XIX, nomeadamente no ano de 1869, abriu a destilaria da família Ripy no Kentucky. Esta família começou uma longa tradição na produção de Bourbon e foi escolhida numa lista de 400 Bourbons para representar o Kentucky na Feira Mundial de 1893. A destilaria da família Ripy é agora a casa de um dos Bourbons mais conhecidos em todo o mundo, o Wild Turkey Bourbon.
+                  </p>
+                  <p>Foi no ano de 1870 que os primeiros jarros de Bourbon foram enviados a partir dos portos do rio Ohio. A decisão de engarrafar o Bourbon era uma questão de conveniência para todas as partes, dado que os jarros ficavam mais atraentes e eram mais fáceis de transportar nos navios que os barris.
+                  Em 16 de Janeiro de 1920, após a aprovação da 18ª Emenda à Constituição dos EUA, entrou em vigor a Lei Seca, que proibia o fabrico e a venda de bebidas alcoólicas. Toda a indústria de bebidas alcoólicas foi destruída e centenas de empresas foram fechadas, sendo que muitas delas entraram na clandestinidade. Depois da revogação da Lei Seca (1933) algumas voltaram à produção de Bourbon, caso das famílias Samuels e Beam.</p>
+                </div>
+              </div>
+            </div>
+           </div> 
+          </div>
+            <!-- Jonnie Walker -->
+            <div id="team-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="main-title">Jonnie Walker</h3>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/escoces1.png" class="card-img-top" alt="Imagem de Perfil 1">
+                      <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                BLACK LABEL
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <h4> BLACK LABEL</h4>
+                                <h5>O que compoe:</h5>
+                                <ol class="list-group list-group-numbered">
+                                  <li class="list-group-item">SUAVIZADO EM CARVÃO DE MAPLE</li>
+                                  <li class="list-group-item">EQUILÍBRIO DE SABORES DOCES E DE CARVALHO</li>
+                                  <li class="list-group-item">Black label</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/escoces12.png" class="card-img-top" alt="Imagem de Perfil 1">
+                      <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                GOLD LABEL
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <h4> GOLD LABEL</h4>
+                                <h5>O que compoe:</h5>
+                                <ol class="list-group list-group-numbered">
+                                  <li class="list-group-item">FABRICADO COM MEL DE VERDADE</li>
+                                  <li class="list-group-item">SABOR SUAVE, DOCE POR NATUREZA</li>
+                                  <li class="list-group-item">COMBINADO COM O OLD NO. 7</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/escoces13.png" class="card-img-top" alt="Imagem de Perfil 1">
+                      <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                BLUE LABEL
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <h4> BLUE LABEL</h4>
+                                <h5>O que compoe:</h5>
+                                <ol class="list-group list-group-numbered">
+                                  <li class="list-group-item">FEITO COM CANELA DE VERDADE</li>
+                                  <li class="list-group-item">COMBINADO COM O OLD NO. 7</li>
+                                  <li class="list-group-item">INÍCIO SUAVE, FINAL ARDENTE DE CANELA</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/escoces14.png" class="card-img-top" alt="Imagem de Perfil 1">
+                      <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                GREEN LABEL
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <h4> GREEN LABEL</h4>
+                                <h5>O que compoe:</h5>
+                                <ol class="list-group list-group-numbered">
+                                  <li class="list-group-item">FEITO COM CANELA DE VERDADE</li>
+                                  <li class="list-group-item">COMBINADO COM O OLD NO. 7</li>
+                                  <li class="list-group-item">INÍCIO SUAVE, FINAL ARDENTE DE CANELA</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Chivas Regal -->
+            <div id="team-area">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <h3 class="main-title">Chivas Regal</h3>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/chivas1.png" class="card-img-top" alt="Imagem de Perfil 1">
+                      <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Chivas 25 anos
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <h4> Chivas 25 anos </h4>
+                                <h5>O que compoe:</h5>
+                                <ol class="list-group list-group-numbered">
+                                  <li class="list-group-item">com sabores de baunilha cremosa, caramelo, toffee e um toque de nozes.</li>
+                                  <li class="list-group-item">A finalização é suave e persistente, com um toque de calor e um sabor residual de carvalho tostado.</li>
+                                  <li class="list-group-item">exemplo clássico do estilo bourbon americano.</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/chivas2.png" class="card-img-top" alt="Imagem de Perfil 1">
+                      <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Chivas 12 anos
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <h4> Chivas 12 anos</h4>
+                                <h5>O que compoe:</h5>
+                                <ol class="list-group list-group-numbered">
+                                  <li class="list-group-item">aroma rico e doce, com notas de baunilha, caramelo e carvalho tostado.</li>
+                                  <li class="list-group-item">A textura é cremosa e levemente oleosa.</li>
+                                  <li class="list-group-item">envelhecido em barris de carvalho americano novos e carbonizados. </li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/chivas3.png" class="card-img-top" alt="Imagem de Perfil 1">
+                      <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Chivas extra  
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <h4>Chivas extra </h4>
+                                <h5>O que compoe:</h5>
+                                <ol class="list-group list-group-numbered">
+                                  <li class="list-group-item">caracterizado por sua suavidade e complexidade</li>
+                                  <li class="list-group-item">Suave e sedoso. </li>
+                                  <li class="list-group-item">caramelo, baunilha cremosa, carvalho tostado, especiarias como canela e noz-moscada</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="card">
+                      <img src="img/chivas4.png" class="card-img-top" alt="Imagem de Perfil 1">
+                      <div class="card-body">
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Chivas 18 anos
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <h4> Chivas 18 anos</h4>
+                                <h5>O que compoe:</h5>
+                                <ol class="list-group list-group-numbered">
+                                  <li class="list-group-item">Picante e adocicado.</li>
+                                  <li class="list-group-item">Cereais, aveia, baunilha, noz-moscada, pimenta do reino, rosas, canela, mel, doce de leite e cedro.</li>
+                                  <li class="list-group-item">Uma categoria de whiskey bem diferente e peculiar do que conhecemos de Bourbon e Scotch.</li>
+                                </ol>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </main>
+        <!-- Rodapé -->
+      <footer>
+          <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3 class="main-title">Entre em contato conosco</h3>
+                  </div>
+                  <div class="col-md-4 contact-box">
+                    <i class="fas fa-phone"></i>
+                    <p><span class="contact-tile">Ligue para:</span> (21)99999-9999</p>
+                    <p><span class="contact-tile">Horários:</span> 10:00 - 19:00</p>
+                  </div>
+                  <div class="col-md-4 contact-box">
+                    <i class="fas fa-envelope"></i>
+                    <p><span class="contact-tile">Envie um email:</span> contatojust@justwhisky.com.br</p>
+                  </div>
+                  <div class="col-md-4 contact-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><span class="contact-tile">Venha tomar um whisky:</span> Rua Lorem Ipsum - 1314</p>
+                  </div>
+                  <div class="col-md-6" id="msg-box">
+                    <p>Ou nos deixe uma mensagem:</p>
+                  </div>
+                  <div class="col-md-6" id="contact-form">
+                    <form action="">
+                      <input type="text" class="form-control" placeholder="E-mail" name="email">
+                      <input type="text" class="form-control" placeholder="Assunto" name="subject">
+                      <textarea class="form-control" rows="3" placeholder="Sua mensagem..." name="message"></textarea>
+                      <input type="submit" class="main-btn">
+                    </form>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div id="copy-area">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                    <p>Desenvolvido por <a href="https://www.santoinacio-rio.com.br/#gsc.tab=0" target="_blank">Lucas Alves e Cauã Rodrigues</a> &copy; 2023</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Scripts do projeto -->
+        <script src="js/scripts.js"></script>  
 </body>
 </html>

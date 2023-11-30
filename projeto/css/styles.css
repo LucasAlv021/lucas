@@ -41,11 +41,11 @@ body {
     color: #ac9191;
   }
   
-  #navbar-links a {
+  #navbarNavDropdown a {
     color: #FFD700;
   }
   
-  .navbar-expand-lg .navbar-nav .nav-link {
+  .navbar-expand-lg .navbar-nav .navbarNavDropdown {
     padding: 1rem .8rem;
   }
   
